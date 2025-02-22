@@ -5,7 +5,7 @@
         </h2>
     </x-slot>
 
-    <div class="py-12">
+    {{-- <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
@@ -13,36 +13,42 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <div class="py-12">
+        <a href="{{route('addCustView')}}">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
-                    <a href="{{route('addCustView')}}"> Add Customers</a>
+                     Add Customers
                    
                 </div>
             </div>
         </div>
+    </a>
     </div>
 
     <div class="py-12">
+        <a href="{{route('productView')}}">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
-                    <a href="{{route('productView')}}">Add Products</a>
+                    Add Products
                 </div>
             </div>
         </div>
+    </a>
     </div>
 
     <div class="py-12">
+        <a href="{{route('orderDetails')}}">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
-                    <a href="{{route('orderDetails')}}">Order Details</a>
+                   Order Details
                 </div>
             </div>
         </div>
+    </a>
     </div>
 </x-app-layout>
